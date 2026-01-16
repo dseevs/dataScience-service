@@ -1,0 +1,9 @@
+flask
+kafka-python
+jsonpickle
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-mistralai
+openai

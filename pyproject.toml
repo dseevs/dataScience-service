@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ds-service"
+version = "1.0"
+description = "Data Science Flask Service"
+requires-python = ">=3.10"
+dependencies = [
+  "flask",
+  "kafka-python",
+  "jsonpickle",
+
+  # LangChain core
+  "langchain",
+  "langchain-core",
+  "langchain-community",
+
+  # LLM providers
+  "langchain-openai",
+  "langchain-mistralai",
+
+  # OpenAI client
+  "openai"
+]
+
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
